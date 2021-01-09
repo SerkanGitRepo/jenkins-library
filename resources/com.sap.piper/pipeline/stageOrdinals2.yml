@@ -11,9 +11,13 @@ stages:
     ordinal: 30
   Acceptance:
     ordinal: 40
-  Compliance:
+  Security:
     ordinal: 50
-  Promote:
+  Performance:
     ordinal: 60
-  Release:
+  Compliance:
     ordinal: 70
+  Promote:
+    ordinal: 80
+  Release:
+    ordinal: 90
