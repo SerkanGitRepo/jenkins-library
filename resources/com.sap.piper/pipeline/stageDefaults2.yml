@@ -57,6 +57,29 @@ stages:
       npmExecuteEndToEndTests:
         configKeys:
           - 'appUrls'
+  Security:
+    stepConditions:
+      checkmarxExecuteScan:
+        configKeys:
+          - 'checkmarxCredentialsId'
+      fortifyExecuteScan:
+        configKeys:
+          - 'fortifyCredentialsId'
+      whitesourceExecuteScan:
+        configKeys:
+          - 'userTokenCredentialsId'
+          - 'whitesource/userTokenCredentialsId'
+          - 'whitesourceUserTokenCredentialsId'
+  Performance:
+    stepConditions:
+      multicloudDeploy:
+        configKeys:
+          - 'cfTargets'
+          - 'neoTargets'
+      gatlingExecuteTests:
+        filePatternFromConfig: 'pomPath'
+        configKeys:
+          - 'appUrls'
   Compliance: {}
   Promote:
     stepConditions:
