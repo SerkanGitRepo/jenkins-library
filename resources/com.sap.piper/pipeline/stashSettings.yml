@@ -10,12 +10,12 @@ Init:
     - source
   stashes: []
 
-Build:
+'Build:
   unstash:
     - source
   stashes: []
 
-Integration:
+'Integration:
   unstash:
     - source
     - buildResult

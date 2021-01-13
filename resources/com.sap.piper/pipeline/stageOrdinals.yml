@@ -3,11 +3,11 @@ stages:
     ordinal: 1
   'Pull-Request Voting':
     ordinal: 5
-  Build:
+  'Build:
     ordinal: 10
   'Additional Unit Tests':
     ordinal: 20
-  Integration:
+  'Integration:
     ordinal: 30
   Acceptance:
     ordinal: 40
