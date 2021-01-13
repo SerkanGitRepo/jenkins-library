@@ -1,5 +1,5 @@
-module github.com/SAP/jenkins-library
-
+//module github.com/SAP/jenkins-library
+module github.com/SerkanGitRepo/jenkins-library
 go 1.15
 
 require (
